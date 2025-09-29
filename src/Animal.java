@@ -1,4 +1,4 @@
-public class Animal {
+/*public class Animal {
     String family;
     String name;
     int age;
@@ -11,6 +11,32 @@ public class Animal {
         this.isMammal = isMammal;
     }
 
+    public String toString() {
+        return "Animal{" +
+                "family='" + family + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", isMammal=" + isMammal +
+                '}';
+    }
+}
+*/
+public class Animal {
+    String family;
+    String name;
+    int age;
+    boolean isMammal;
+
+
+    public Animal(String family, String name, int age, boolean isMammal) {
+        this.family = family;
+        this.name = name;
+        this.age = age;
+        this.isMammal = isMammal;
+    }
+
+    // Redéfinition de toString()
+    @Override
     public String toString() {
         return "Animal{" +
                 "family='" + family + '\'' +
