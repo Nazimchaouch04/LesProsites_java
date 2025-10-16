@@ -12,7 +12,7 @@ public class Animal {
         setSpecies(species);
     }
 
-    
+
     public String getName() {
         return name;
     }
