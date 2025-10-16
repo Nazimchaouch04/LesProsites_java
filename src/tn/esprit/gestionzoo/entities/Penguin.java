@@ -3,13 +3,13 @@ package tn.esprit.gestionzoo.entities;
 public class Penguin extends Aquatic {
     private float swimmingDepth;
 
-    // Constructeur par défaut
+    // C.p.d
     public Penguin() {
         super();
         this.swimmingDepth = 0f;
     }
 
-    // Constructeur paramétré
+    // C.param
     public Penguin(String name, int age, String species, String habitat, float swimmingDepth) {
         super(name, age, species, habitat);
         setSwimmingDepth(swimmingDepth);

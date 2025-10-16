@@ -3,13 +3,13 @@ package tn.esprit.gestionzoo.entities;
 public class Dolphin extends Aquatic {
     private float swimmingSpeed;
 
-    // Constructeur par défaut
+    // C.p.d
     public Dolphin() {
         super();
         this.swimmingSpeed = 0f;
     }
 
-    // Constructeur paramétré
+    // C.param
     public Dolphin(String name, int age, String species, String habitat, float swimmingSpeed) {
         super(name, age, species, habitat);
         setSwimmingSpeed(swimmingSpeed);

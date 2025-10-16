@@ -19,7 +19,7 @@ public class Main {
             System.out.println("2️⃣  Supprimer un animal");
             System.out.println("3️⃣  Afficher tous les animaux");
             System.out.println("4️⃣  Afficher les informations du zoo");
-            System.out.println("5️⃣  Tester l’héritage (Prosit 5)");
+            System.out.println("5️⃣  Choose");
             System.out.println("0️⃣  Quitter");
             System.out.print("👉 Votre choix : ");
             choix = sc.nextInt();
@@ -42,7 +42,7 @@ public class Main {
                         Animal a = new Animal(nom, age, espece);
                         zoo.addAnimal(a);
                     } catch (IllegalArgumentException e) {
-                        System.out.println("❌ Erreur : " + e.getMessage());
+                        System.out.println(" Erreur : " + e.getMessage());
                     }
                     break;
 
@@ -62,7 +62,7 @@ public class Main {
                     if (animalASupprimer != null) {
                         zoo.removeAnimal(animalASupprimer);
                     } else {
-                        System.out.println("⚠️ Aucun animal trouvé avec ce nom !");
+                        System.out.println("⚠ Aucun animal trouvé avec ce nom !");
                     }
                     break;
 
@@ -77,15 +77,15 @@ public class Main {
                     break;
 
                 case 5:
-                    menuHeritage(sc);
+                    choose(sc);
                     break;
 
                 case 0:
-                    System.out.println("\n👋 Fin du programme. À bientôt !");
+                    System.out.println("\n Fin du programme. À bientôt !");
                     break;
 
                 default:
-                    System.out.println("⚠️ Choix invalide, réessayez !");
+                    System.out.println(" Choix invalide, réessayez !");
             }
 
         } while (choix != 0);
@@ -93,13 +93,11 @@ public class Main {
         sc.close();
     }
 
-    // ===========================
-    // === Sous-menu Héritage ===
-    // ===========================
-    private static void menuHeritage(Scanner sc) {
+
+    private static void choose(Scanner sc) {
         int choixH;
         do {
-            System.out.println("\n===== MENU PROSIT 5 : HÉRITAGE =====");
+            System.out.println("\n===== MENU CHOOSE=====");
             System.out.println("1️⃣  Créer un Aquatic");
             System.out.println("2️⃣  Créer un Dolphin");
             System.out.println("3️⃣  Créer un Penguin");

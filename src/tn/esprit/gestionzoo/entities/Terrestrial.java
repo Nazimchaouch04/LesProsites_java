@@ -3,13 +3,13 @@ package tn.esprit.gestionzoo.entities;
 public class Terrestrial extends Animal {
     private int nbrLegs;
 
-    // Constructeur par défaut
+    // C.p.d
     public Terrestrial() {
         super("Inconnu", 0, "Terrestrial");
         this.nbrLegs = 0;
     }
 
-    // Constructeur paramétré
+     // C.param
     public Terrestrial(String name, int age, String species, int nbrLegs) {
         super(name, age, species);
         setNbrLegs(nbrLegs);
